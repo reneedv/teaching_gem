@@ -7,4 +7,5 @@ When /^I call echo with (\w+ \w+)$/ do |arg1|
 end
 
 Then /^I get back (\w+ \w+)$/ do |arg1|
+	assert_equal @result, arg1
 end

@@ -1,7 +1,7 @@
 require 'helper'
 
 class TestTeachingGem < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  should "test that Teach can echo Hello World" do
+    assert_equal Teach.new.echo("Hello World"), "Hello World"
   end
 end
